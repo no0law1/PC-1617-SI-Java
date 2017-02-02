@@ -1,0 +1,15 @@
+group 'PC-1617SI'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+test{
+    testLogging.showStandardStreams = true
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
